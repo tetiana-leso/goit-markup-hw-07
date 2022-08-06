@@ -565,7 +565,7 @@ position: relative;
 
 /* Portfolio page */
 
-.filters-list {
+.filters {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -573,7 +573,7 @@ position: relative;
 
 }
 
-.portfolio-btn {
+.filters__btn {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;
@@ -589,35 +589,35 @@ position: relative;
     transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
-.portfolio-btn:hover,
-.hportfolio-btn:focus,
-.portfolio-btn-current {
+.filters__btn:hover,
+.hfilters__btn:focus,
+.filters__btn--current {
     color: var(--white-cl);
     background-color: var(--accent-btn-cl);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
-.projects-list {
+.projects {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 
 }
 
-.projects-link {
+.projects__link {
     display: block;
     transition: box-shadow 250ms var(--cubic);
 }
 
 
 
-.portfolio-image {
+.projects__wrap {
     position: relative;
     overflow: hidden;
 }
 
-.projects-overlay {
+.projects__overlay {
     display: block;
     position: absolute;
     bottom: 0;
@@ -633,8 +633,8 @@ position: relative;
     
 }
 
-.projects-link:hover,
-.projects-link:focus  {
+.projects__link:hover,
+.projects__link:focus  {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -642,7 +642,7 @@ position: relative;
 
 }
 
-.projects-overlay-text {
+.projects__overlay-text {
     padding: 63px 24px;
    
     font-weight: 400;
@@ -656,8 +656,8 @@ position: relative;
  
 }
 
-.projects-link:hover .projects-overlay,
-.projects-link:focus .projects-overlay
+.projects__link:hover .projects__overlay,
+.projects__link:focus .projects__overlay
  {
     transform: translateY(0);
 }
@@ -673,7 +673,7 @@ position: relative;
     border-top: none;
 }
 
-.projects-title {
+.projects__title {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -683,7 +683,7 @@ position: relative;
 
 }
 
-.projects-text {
+.projects__text {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -851,7 +851,7 @@ position: relative;
 
     
 }
-.button-close-modal {
+.btn-close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -867,13 +867,13 @@ position: relative;
     cursor: pointer;
 }
 
-.svg-close-modal {
+.btn-close__svg {
     fill: #000;
     transition: fill 250ms var(--cubic);
 }
 
-.button-close-modal:hover .svg-close-modal,
-.button-close-modal:focus .svg-close-modal {
+.btn-close:hover .btn-close__svg,
+.btn-close:focus .btn-close__svg {
     fill: var(--accent-cl);
 }
 
@@ -886,12 +886,12 @@ position: relative;
    
 }
 
-.form-field {
+.form-modal__field {
     display: inline-block;
     position: relative;
 }
 
-.modal-title {
+.form-modal__title {
     color: var(--primary-txt-cl);
     font-size: 20px;
     line-height: calc(23 / 20);
@@ -900,7 +900,7 @@ position: relative;
    
 }
 
-.input-modal {
+.form-modal__input {
     width: 100%;
     height: 40px;
 
@@ -912,7 +912,7 @@ position: relative;
     transition: border-color 250ms var(--cubic);
 }
 
-.label-modal {
+.form-modal__label {
     color: var(--secondary-txt-cl);
     font-weight: 400;
     font-size: 12px;
@@ -925,18 +925,18 @@ position: relative;
     
 }
 
-.textarea-modal {
+.form-modal__input--textarea {
     min-height: 120px;
     resize: none;
     margin-bottom: 20px;
     padding: 12px 16px;
 }
 
-.link-modal {
+.form-modal__link {
     color: var(--accent-cl);
 }
 
-.icon-modal {
+.form-modal__icon {
     position: absolute;
     left: 12px;
     bottom: 50%;
@@ -945,17 +945,17 @@ position: relative;
     transition: fill 250ms var(--cubic);
 }
 
-.input-modal:hover, .input-modal:focus {
+.form-modal__input:hover, .form-modal__input:focus {
     border-color: var(--accent-cl);
     outline: transparent;
     
 }
 
-.input-modal:focus+.icon-modal,.input-modal:hover+.icon-modal {
+.form-modal__input:focus+.form-modal__icon,.form-modal__input:hover+.form-modal__icon {
     fill: var(--accent-cl);
 }
 
-.modal-btn {
+.form-modal__btn {
     display: block;
     margin: 0 auto;
 
@@ -983,57 +983,57 @@ position: relative;
 
 
 
-.modal-btn:hover,
-.modal-btn:focus {
+.form-modal__btn:hover,
+.form-modal__btn:focus {
     background-color: #188CE8;
 }
 
-.check-box {
+.form-modal__check-box {
     display: flex;
     justify-content: center;
     transition: fill 250ms var(--cubic);
 }
 
 
- .check-box:hover .check-off {
+ .form-modal__check-box:hover .form-modal__check-off {
 fill: var(--accent-cl);
 
 }
 
-.label-check { 
+.form-modal__label--check { 
     display: flex;
     align-items: center;
     margin: 0;
 }
  
-.check-box:focus-within {
+.form-modal__check-box:focus-within {
     fill: var(--accent-cl);
 }
 
 
-.check-on {
+.form-modal__check-on {
     border-radius: 2px;
     opacity: 0;
     position: absolute;
     transition: opacity 250ms var(--cubic);
 }
 
-.check:checked+.check-on {
+.form-modal__check:checked+.form-modal__check-on {
     opacity: 1;
     background-color: var(--accent-cl);
 }
 
-.check-off {
+.form-modal__check-off {
     opacity: 1;
     transition: fill 250ms var(--cubic);
 }
 
 
-.check:checked~.check-off {
+.check:checked~.form-modal__check-off {
     opacity: 0;
 }
 
-.check-text {
+.form-modal__text {
     font-size: 14px;
     margin-left: 7px;
 }
