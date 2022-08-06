@@ -686,6 +686,30 @@ position: relative;
     fill: #FFFFFF;
 } */
 
+
+/* footer-socials-icons */
+
+/* .footer-socials {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.socials__link--footer {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms var(--cubic)
+
+
+}
+
+.socials__link--footer:hover,
+.socials__link--footer:focus {
+
+    background-color: #2196F3;
+} */
+
 /* Portfolio page */
 
 /* .filters {
@@ -823,30 +847,9 @@ position: relative;
 
 
 
-/* footer-socials-icons */
-
-.footer-socials {
-    display: flex;
-    flex-direction: column;
-    
-
-}
-
-.socials__link--footer {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms var(--cubic)
 
 
-}
-
-.socials__link--footer:hover,
-.socials__link--footer:focus {
-
-    background-color: #2196F3;
-}
-
-/* Modal */
+/* Modal
 .backdrop {
     position: fixed;
     top: 0;
@@ -925,7 +928,7 @@ position: relative;
 
 /* FORM MODAL */
 
-.form-modal {
+/* .form-modal {
     display: flex;
     flex-direction: column;
 
@@ -1082,4 +1085,4 @@ fill: var(--accent-cl);
 .form-modal__text {
     font-size: 14px;
     margin-left: 7px;
-}
+}  */
