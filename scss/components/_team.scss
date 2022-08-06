@@ -72,13 +72,20 @@
     border-radius: 50%;
     transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
 
+
+    &:hover, &:focus {
+        color: #FFFFFF;
+        background-color: #2196F3;
 }
 
-.socials__link:hover,
-.socials__link:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
+
 }
+
+// .socials__link:hover,
+// .socials__link:focus {
+//     color: #FFFFFF;
+//     background-color: #2196F3;
+// }
 
 
 .socials__icon {
