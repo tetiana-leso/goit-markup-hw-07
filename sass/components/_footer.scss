@@ -40,6 +40,12 @@
 
 .footer-contacts__item {
     color: var(--white-cl);
+    
+}
+
+.footer-contacts__link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms var(--cubic);
 
     &:hover,
     &:focus {
@@ -48,15 +54,14 @@
 }
 
 
+
+
 .footer-contacts__item:not(:last-child) {
     margin-bottom: 9px;
 
 }
 
-.footer-contacts__item {
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms var(--cubic);
-}
+
 
 .footer__title {
     margin-bottom: 20px;

@@ -530,18 +530,18 @@ img {
 .footer-contacts__item {
   color: var(--white-cl);
 }
-.footer-contacts__item:hover, .footer-contacts__item:focus {
+
+.footer-contacts__link {
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms var(--cubic);
+  transition: color 250ms var(--cubic);
+}
+.footer-contacts__link:hover, .footer-contacts__link:focus {
   color: var(--accent-cl);
 }
 
 .footer-contacts__item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-contacts__item {
-  color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: color 250ms var(--cubic);
-  transition: color 250ms var(--cubic);
 }
 
 .footer__title {
